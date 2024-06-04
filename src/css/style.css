@@ -1,5 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --text-color1: #219bac;
+    --text-color2: darkblue;
+    --text-color3: #230479;
+    --text-color4: #197282;
+    --text-color5: #3e3e3e;
+    --text-color6: #000000;
+    --text-color7: #2c2caa;
+    --text-color8: #0f0ffd;
+    --bg-color1: #00113a;
+    --bg-color2: white;
+    --bg-color3: #dfdfdf;
+    --bg-color4: #64cbfb;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Lora", serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bg-color4);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-auto-rows: 60px;
+    grid-template-areas:
+        'header     header      header      header      header      header'
+        'materia1   materia1    materia1    materia1    materia1    materia1'
+        'materia1   materia1    materia1    materia1    materia1    materia1'
+        'materia2   materia2    materia2    materia2    materia2    materia2'
+        'materia3   materia3    materia3    materia3    materia3    materia3'
+        'artigo1    artigo1     artigo2     artigo2     artigo2     artigo3'
+        'rodape     rodape      rodape      rodape      rodape      rodape' 
+    ;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 60px;
+    background-color: var(--bg-color1);
+}
+
+.header .atalho{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#menu{
+    display: block;
+    position: absolute;
+    width: 30%;
+    top: 60px;
+    left: 0px;
+    list-style: none;
+    background: #00113a;
+    transition: .6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#nav.active #menu{
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: auto;
+}
+
+#menu a{
+    display: block;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+}
+
+#btn-menu{
+    display: flex;
+    padding: .5rem 1rem;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    background: none;
+    color: var(--text-color1);
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#hamburger{
+    border-top: 2.5px solid;
+    width: 20px;
+}
+
+#hamburger::after, #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburger{
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before{
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+li a:hover{
+    background-color: rgba(255, 255, 255, 0.421);
+}
+
+.header .titulo{
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo h1{
+    font-family: 'Bookman Old Style';
+    font-size: 40px;
+    color: #219bac;
+    margin-right: 20px;
+}
+
+.titulo img{
+    width: 45px;
+    height: 45px;
+}
+
+.header .login{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 15px;
+}
+
+.login #login_btn{
+    padding: 6px 18px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.9s ease 0s;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: darkblue;   
+}
+
+.login #login_btn:hover{
+    background-color: #64cbfb;
+    color: white;
+}
+
+.sec1{
+    grid-area: materia1;
+}
+.sec2{
+    grid-area: materia2;
+}
+.sec3{
+    grid-area: materia3;
+}
+.artigo1{
+    grid-area: artigo1;
+}
+.artigo2{
+    grid-area: artigo2;
+}
+.rodape{
+    grid-area: rodape;
+}
+
+@media (max-width: 768px) {
+
 }
