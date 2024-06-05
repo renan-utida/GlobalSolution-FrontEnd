@@ -65,7 +65,7 @@ body{
 #menu{
     display: block;
     position: absolute;
-    width: 350px;
+    width: 30%;
     top: 60px;
     left: 0px;
     list-style: none;
@@ -87,8 +87,7 @@ body{
     display: block;
     padding: 1rem 1rem;
     margin: 0 1rem;
-    color: white;
-    border-top: 2px solid rgba(255, 255, 255, 0.07);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
 }
 
 #btn-menu{
@@ -96,7 +95,7 @@ body{
     padding: .5rem 1rem;
     font-family: "PT Serif", serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     border: none;
     background: none;
     color: var(--text-color1);
@@ -105,16 +104,15 @@ body{
 }
 
 #hamburger{
-    margin-top: 7px;
-    border-top: 3px solid;
-    width: 24px;
+    border-top: 2.5px solid;
+    width: 20px;
 }
 
 #hamburger::after, #hamburger::before {
     content: '';
     display: block;
-    width: 24px;
-    height: 2.5px;
+    width: 20px;
+    height: 2px;
     background: currentColor;
     margin-top: 5px;
     transition: .3s;
