@@ -30,7 +30,7 @@ function validar(){
 //-------------------------------------------------------------------//
 //DOUBLE CLICK PARA CORES
 
-let colors = ['#white', '#9ea9ff', '#64a7c6'];
+let colors = ['#ffffff', '#9ea9ff', '#64a7c6'];
 let colorIndex = 0;
 
 document.body.style.backgroundColor = colors[colorIndex]; // Define a cor inicial

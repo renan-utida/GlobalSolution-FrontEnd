@@ -22,9 +22,6 @@
     text-decoration: none;
 }
 
-body{
-    background-color: var(--color11);
-}
 
 .container{
     display: grid;

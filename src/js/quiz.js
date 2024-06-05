@@ -9,6 +9,7 @@ function toggleMenu(event) {
 btnMenu.addEventListener('click', toggleMenu);
 btnMenu.addEventListener('touchstart', toggleMenu);
 
+//----------------------------------------------------------------//
 // QUIZ - FUNCIONAMENTO 
 // Perguntas e respostas
 
