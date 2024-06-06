@@ -24,7 +24,7 @@ const questions = [
         ],
     },
     {
-        question: "Qual porcentagem das espécies marinhas vivem em recifes de corais?",
+        question: "Qual porcentagem das espécies marinhas vivem em recifes de coral?",
         answers: [
         { text: "10%", correct: false },
         { text: "25%", correct: true },
@@ -42,7 +42,7 @@ const questions = [
         ],
     },
     {
-        question: "Qual é uma das técnicas usadas para restaurar recifes de corais?",
+        question: "Qual é uma das técnicas usadas para restaurar recifes de coral?",
         answers: [
         { text: "Pesca seletiva", correct: false },
         { text: "Cultivo de corais em viveiros", correct: true },
@@ -51,7 +51,7 @@ const questions = [
         ],
     },
     {
-        question: "Qual é a maior ameaça local aos recifes de corais?",
+        question: "Qual é a maior ameaça local aos recifes de coral?",
         answers: [
         { text: "Navegação", correct: false },
         { text: "Pesca predatória", correct: true },

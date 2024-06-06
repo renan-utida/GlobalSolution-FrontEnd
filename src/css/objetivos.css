@@ -6,12 +6,12 @@
     --color3: #9e9e9e;
     --color4: #e9f8ff;
     --color5: #d9e8ee;
-    --color6: #141488;
+    --color6: #16af87;
     --color7: #b0c5f6;
     --color8: #00113a;
-    --color9: #2c33b4;
+    --color9: #3abd9a;
     --color10: #1d006d;
-    --color11: #454de1;
+    --color11: #116c4b;
 }
 
 *{
@@ -33,35 +33,28 @@ body{
     grid-template-areas:
         'header     header      header      header      header      header'
         'header     header      header      header      header      header'
-        'tech       tech        tech        tech        tech        tech'
+        'objetivo   objetivo    objetivo    objetivo    objetivo    objetivo'
         'titulo     titulo      titulo      titulo      titulo      titulo'
         'titulo     titulo      titulo      titulo      titulo      titulo'
         'titulo     titulo      titulo      titulo      titulo      titulo'
         'introducao introducao  introducao  introducao  introducao  introducao'
         'introducao introducao  introducao  introducao  introducao  introducao'
-        'python     python      python      python      python      python'
-        'python     python      python      python      python      python'
-        'python     python      python      python      python      python'
-        'python     python      python      python      python      python'
-        'python     python      python      python      python      python'
-        'edge       edge        edge        edge        edge        edge'
-        'edge       edge        edge        edge        edge        edge'
-        'edge       edge        edge        edge        edge        edge'
-        'edge       edge        edge        edge        edge        edge'
-        'edge       edge        edge        edge        edge        edge'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
-        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'introducao introducao  introducao  introducao  introducao  introducao'
+        'introducao introducao  introducao  introducao  introducao  introducao'
+        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
+        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
+        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
+        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
+        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
+        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
+        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
+        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
+        'imagem     imagem      imagem      perigo      perigo      perigo'
+        'imagem     imagem      imagem      perigo      perigo      perigo'
+        'imagem     imagem      imagem      perigo      perigo      perigo'
+        'imagem     imagem      imagem      perigo      perigo      perigo'
+        'imagem     imagem      imagem      perigo      perigo      perigo'
+        'imagem     imagem      imagem      perigo      perigo      perigo'
         'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
     ;
@@ -207,8 +200,8 @@ li a:hover{
     color: white;
 }
 
-.tecnologia{
-    grid-area: tech;
+.objetivos{
+    grid-area: objetivo;
     display: flex;
     justify-content: center;
     align-items: top;
@@ -233,13 +226,13 @@ li a:hover{
     font-weight: bold;
 
     color: var(--color6);
-    text-shadow: 1px 1px 10px var(--color3);
+    text-shadow: 1px 1px 20px var(--color3);
 }
 
 .tema-principal h2{
-    font-size: 22px;
+    font-size: 24px;
     font-style: italic;
-    color: var(--color10);
+    color: var(--color11);
 }
 
 .box-introducao {
@@ -256,8 +249,8 @@ li a:hover{
 }
 
 .introducao h3{
-    font-size: 32px;
-    margin: 10px 20px 0px 20px;
+    font-size: 40px;
+    margin: 0px 10px 5px 20px;
     color: var(--color9);
     font-family: 'Bookman Old Style';
     text-shadow: 1px 1px 30px var(--color3);
@@ -266,59 +259,16 @@ li a:hover{
 .introducao img{
     max-width: 50px;
     height: 50px;
-    margin: 2px 0px 0px 7px;
+    margin-left: 5px;
 }
 
-.box-python{
-    grid-area: python;
-    display: flex;
-    flex-direction: column;
-
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 2px 20px 10px 20px;
-}
-
-.box-python h3{
-    font-size: 30px;
-    font-family: 'Bookman Old Style';
-    font-style: italic;
-    margin: 10px 20px 0px 20px;
-    color: var(--color11);
-}
-
-.box-python p{
-    font-family: "PT Serif", serif;
-    font-size: 17px;
+.box-introducao p{
+    font-size: 18px;
+    font-weight: 500;
     text-align: justify;
-    text-indent: 40px;
-    margin: 0px 20px 2px 20px;
-}
-
-.box-edge{
-    grid-area: edge;
-    display: flex;
-    flex-direction: column;
-
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 10px 20px 0px 20px;
-}
-
-.box-edge h3{
-    font-size: 30px;
-    font-family: 'Bookman Old Style';
-    font-style: italic;
-    margin: 10px 20px 3px 20px;
-    color: var(--color11);
-}
-
-.box-edge p{
     font-family: "PT Serif", serif;
-    font-size: 17px;
-    text-align: justify;
-    text-indent: 40px;
     margin: 2px 20px;
+    text-indent: 40px;
 }
 
 /*--Estilizacao para o SlideShow--*/
@@ -329,9 +279,9 @@ li a:hover{
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    max-width: 550px;
-    height: 350px;
-    margin: 20px auto 20px auto;
+    max-width: 690px;
+    height: 390px;
+    margin: 15px 15px 20px 35px;
 }
 
 .mySlides {
@@ -356,6 +306,77 @@ img {
     to {opacity: 1}
 }
 
+.especifico{
+    grid-area: ameaca;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 15px 25px 10px 0px;
+}
+
+.especifico .objespecif{
+    display: flex;
+}
+
+.objespecif h3{
+    font-size: 26px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 15px 10px 0px 20px;
+}
+
+.objespecif img{
+    max-width: 40px;
+    height: 40px;
+    gap: 10px;
+    margin: 9px 20px 0px 0px;
+}
+
+.especifico .objtv{
+    margin: 5px 20px 5px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 17px;
+    font-family: "PT Serif", serif;
+    font-style: italic;
+    
+}
+
+.esperado{
+    grid-area: perigo;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 25px 15px 0px;
+}
+
+.esperado .impacto{
+    display: flex; 
+}
+
+.impacto h3{
+    font-size: 26px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 10px 10px 0px 20px;
+} 
+
+.impacto img{
+    max-width: 35px;
+    height: 35px;
+    gap: 10px;
+    margin: 5px 20px 0px 0px;
+}
+
+.esperado .mudanca{
+    margin: 5px 20px 10px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
 .rodape{
     grid-area: rodape;
     display: flex;
@@ -369,7 +390,6 @@ img {
     font-weight: 700;
     font-style: italic;
 }
-
 
 @media (max-width: 768px) {
 
