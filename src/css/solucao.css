@@ -6,12 +6,12 @@
     --color3: #9e9e9e;
     --color4: #e9f8ff;
     --color5: #d9e8ee;
-    --color6: #16af87;
+    --color6: #ab2f2f;
     --color7: #b0c5f6;
     --color8: #00113a;
-    --color9: #3abd9a;
+    --color9: #ce3d4e;
     --color10: #1d006d;
-    --color11: #116c4b;
+    --color11: #8a0d16;
 }
 
 *{
@@ -33,28 +33,27 @@ body{
     grid-template-areas:
         'header     header      header      header      header      header'
         'header     header      header      header      header      header'
-        'objetivo   objetivo    objetivo    objetivo    objetivo    objetivo'
+        'solucao    solucao     solucao     solucao     solucao     solucao'
         'titulo     titulo      titulo      titulo      titulo      titulo'
         'titulo     titulo      titulo      titulo      titulo      titulo'
         'titulo     titulo      titulo      titulo      titulo      titulo'
-        'introducao introducao  introducao  introducao  introducao  introducao'
-        'introducao introducao  introducao  introducao  introducao  introducao'
-        'introducao introducao  introducao  introducao  introducao  introducao'
-        'introducao introducao  introducao  introducao  introducao  introducao'
-        'imagem     imagem      imagem      especifico  especifico  especifico'
-        'imagem     imagem      imagem      especifico  especifico  especifico'
-        'imagem     imagem      imagem      especifico  especifico  especifico'
-        'imagem     imagem      imagem      especifico  especifico  especifico'
-        'imagem     imagem      imagem      especifico  especifico  especifico'
-        'imagem     imagem      imagem      especifico  especifico  especifico'
-        'imagem     imagem      imagem      especifico  especifico  especifico'
-        'imagem     imagem      imagem      especifico  especifico  especifico'
-        'imagem     imagem      imagem      esperado    esperado    esperado'
-        'imagem     imagem      imagem      esperado    esperado    esperado'
-        'imagem     imagem      imagem      esperado    esperado    esperado'
-        'imagem     imagem      imagem      esperado    esperado    esperado'
-        'imagem     imagem      imagem      esperado    esperado    esperado'
-        'imagem     imagem      imagem      esperado    esperado    esperado'
+        'mudanca    mudanca     mudanca     imagem      imagem      imagem'
+        'mudanca    mudanca     mudanca     imagem      imagem      imagem'
+        'mudanca    mudanca     mudanca     imagem      imagem      imagem'
+        'mudanca    mudanca     mudanca     imagem      imagem      imagem'
+        'mudanca    mudanca     mudanca     imagem      imagem      imagem'
+        'mudanca    mudanca     mudanca     imagem      imagem      imagem'
+        'diaria     diaria      diaria      imagem      imagem      imagem'
+        'diaria     diaria      diaria      imagem      imagem      imagem'
+        'diaria     diaria      diaria      imagem      imagem      imagem'
+        'diaria     diaria      diaria      imagem      imagem      imagem'
+        'diaria     diaria      diaria      imagem      imagem      imagem'
+        'diaria     diaria      diaria      imagem      imagem      imagem'
+        'futuro     futuro      futuro      futuro      futuro      futuro'
+        'futuro     futuro      futuro      futuro      futuro      futuro'
+        'futuro     futuro      futuro      futuro      futuro      futuro'
+        'futuro     futuro      futuro      futuro      futuro      futuro'
+        'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
     ;
@@ -200,8 +199,8 @@ li a:hover{
     color: white;
 }
 
-.objetivos{
-    grid-area: objetivo;
+.solucao{
+    grid-area: solucao;
     display: flex;
     justify-content: center;
     align-items: top;
@@ -226,7 +225,7 @@ li a:hover{
     font-weight: bold;
 
     color: var(--color6);
-    text-shadow: 1px 1px 20px var(--color3);
+    text-shadow: 1px 1px 27px var(--color3);
 }
 
 .tema-principal h2{
@@ -235,40 +234,104 @@ li a:hover{
     color: var(--color11);
 }
 
-.box-introducao {
-    grid-area: introducao;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: 0 15px;
-    border-radius: 15px;
+.mudanca{
+    grid-area: mudanca;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 20px 10px 10px 25px;
 }
 
-.box-introducao .introducao{
+.mudanca .comunidade{
     display: flex;
 }
 
-.introducao h3{
-    font-size: 36px;
-    margin: 0px 10px 5px 20px;
-    color: var(--color9);
+.comunidade h3{
+    font-size: 25px;
     font-family: 'Bookman Old Style';
-    text-shadow: 1px 1px 30px var(--color3);
+    font-weight: bold;
+    color: var(--color9);
+    margin: 8px 15px 0px 20px;
 }
 
-.introducao img{
-    max-width: 50px;
-    height: 50px;
-    margin-left: 5px;
+.comunidade img{
+    max-width: 45px;
+    height: 45px;
+    gap: 10px;
+    margin: 0px 20px 0px 0px;
 }
 
-.box-introducao p{
-    font-size: 18px;
-    font-weight: 500;
+.mudanca .ambiente{
+    margin: 5px 20px 5px 40px;
+    text-indent: 20px;
     text-align: justify;
-    font-family: "PT Serif", serif;
-    margin: 2px 20px;
-    text-indent: 40px;
+    font-size: 17px;
+    font-family: "PT Serif", serif;  
+}
+
+.vida{
+    grid-area: diaria;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 10px 10px 25px;
+}
+
+.vida .diaria{
+    display: flex;
+}
+
+.diaria h3{
+    font-size: 24px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 9px 10px 0px 20px;
+}
+
+.diaria img{
+    max-width: 38px;
+    height: 38px;
+    margin: 1px 20px 0px 5px;
+}
+
+.vida .melhoria{
+    margin: 5px 20px 5px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "PT Serif", serif; 
+}
+
+.beneficios{
+    grid-area: futuro;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 25px 20px 25px;
+}
+
+.beneficios .prazo{
+    display: flex; 
+}
+
+.prazo h3{
+    font-size: 25px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 8px 15px 0px 20px;
+} 
+
+.prazo img{
+    max-width: 40px;
+    height: 40px;
+    gap: 10px;
+    margin: 4px 15px 0px 0px;
+}
+
+.beneficios .longo-prazo{
+    margin: 2px 20px 10px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 17px;
 }
 
 /*--Estilizacao para o SlideShow--*/
@@ -279,9 +342,9 @@ li a:hover{
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    max-width: 690px;
-    height: 390px;
-    margin: 15px 15px 20px 35px;
+    max-width: 800px;
+    height: 330px;
+    margin: 20px 25px 20px 35px;
 }
 
 .mySlides {
@@ -306,76 +369,6 @@ img {
     to {opacity: 1}
 }
 
-.especifico{
-    grid-area: especifico;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 15px 25px 10px 0px;
-}
-
-.especifico .objespecif{
-    display: flex;
-}
-
-.objespecif h3{
-    font-size: 26px;
-    font-family: 'Bookman Old Style';
-    font-weight: bold;
-    color: var(--color9);
-    margin: 15px 10px 0px 20px;
-}
-
-.objespecif img{
-    max-width: 40px;
-    height: 40px;
-    gap: 10px;
-    margin: 9px 20px 0px 0px;
-}
-
-.especifico .objtv{
-    margin: 5px 20px 5px 40px;
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 17px;
-    font-family: "PT Serif", serif;  
-}
-
-.esperado{
-    grid-area: esperado;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 10px 25px 15px 0px;
-}
-
-.esperado .impacto{
-    display: flex; 
-}
-
-.impacto h3{
-    font-size: 26px;
-    font-family: 'Bookman Old Style';
-    font-weight: bold;
-    color: var(--color9);
-    margin: 10px 10px 0px 20px;
-} 
-
-.impacto img{
-    max-width: 35px;
-    height: 35px;
-    gap: 10px;
-    margin: 5px 20px 0px 0px;
-}
-
-.esperado .mudanca{
-    margin: 5px 20px 10px 40px;
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 .rodape{
     grid-area: rodape;
     display: flex;
@@ -384,6 +377,7 @@ img {
     text-align: center;
     color: white;
     background-color: var(--color8);
+    margin-top: 30px;
     font-size: 18px;
     font-family: "PT Serif", serif;
     font-weight: 700;
