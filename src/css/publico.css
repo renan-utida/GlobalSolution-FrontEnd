@@ -36,6 +36,15 @@ body{
     'titulo     titulo      titulo      titulo      titulo      titulo'
     'titulo     titulo      titulo      titulo      titulo      titulo'
     'titulo     titulo      titulo      titulo      titulo      titulo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
+    'alvo       alvo        alvo        alvo        alvo        alvo'
     'imagem     imagem      imagem      imagem      imagem      imagem'
     'imagem     imagem      imagem      imagem      imagem      imagem'
     'imagem     imagem      imagem      imagem      imagem      imagem'
@@ -50,15 +59,6 @@ body{
     'imagem     imagem      imagem      imagem      imagem      imagem'
     'imagem     imagem      imagem      imagem      imagem      imagem'
     'imagem     imagem      imagem      imagem      imagem      imagem'
-    'alvo       alvo        direto      direto      indireto    indireto'
-    'alvo       alvo        direto      direto      indireto    indireto'
-    'alvo       alvo        direto      direto      indireto    indireto'
-    'alvo       alvo        direto      direto      indireto    indireto'
-    'alvo       alvo        direto      direto      indireto    indireto'
-    'alvo       alvo        direto      direto      indireto    indireto'
-    'alvo       alvo        direto      direto      indireto    indireto'
-    'alvo       alvo        direto      direto      indireto    indireto'
-    'alvo       alvo        direto      direto      indireto    indireto'
     'rodape     rodape      rodape      rodape      rodape      rodape' 
     'rodape     rodape      rodape      rodape      rodape      rodape'
     ;
@@ -234,9 +234,52 @@ li a:hover{
 }
 
 .tema-principal h2{
-    font-size: 24px;
+    font-size: 22px;
     font-style: italic;
     color: var(--color11);
+}
+
+.alvo{
+    grid-area: alvo;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 20px 20px 20px;
+}
+
+.alvo .publico-alvo{
+    display: flex;
+}
+
+.publico-alvo h3{
+    font-size: 36px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 10px 10px 0px 20px;
+}
+
+.publico-alvo img{
+    max-width: 50px;
+    height: 50px;
+    gap: 10px;
+    margin: 2px 20px 0px 10px;
+}
+
+.alvo p{
+    font-size: 17px;
+    font-family: "PT Serif", serif;
+    text-indent: 40px;
+    text-align: justify;
+    margin: 3px 20px 0px 20px;
+}
+
+.alvo .pub-alv{
+    margin: 2px 20px 5px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 17px;
+    font-family: "PT Serif", serif; 
+    font-weight: bold;
 }
 
 /*--Estilizacao para o SlideShow--*/
@@ -271,110 +314,6 @@ img {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-}
-
-.alvo{
-    grid-area: alvo;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 10px 10px 20px 20px;
-}
-
-.alvo .publico-alvo{
-    display: flex;
-}
-
-.publico-alvo h3{
-    font-size: 24px;
-    font-family: 'Bookman Old Style';
-    font-weight: bold;
-    color: var(--color9);
-    margin: 10px 10px 0px 20px;
-}
-
-.publico-alvo img{
-    max-width: 40px;
-    height: 40px;
-    gap: 10px;
-    margin: 5px 20px 0px 0px;
-}
-
-.alvo .pub-alv{
-    margin: 2px 20px 5px 30px;
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 15px;
-    font-family: "PT Serif", serif; 
-}
-
-.beneficios{
-    grid-area: direto;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 10px 10px 20px 10px;
-}
-
-.beneficios .diretos{
-    display: flex;
-}
-
-.diretos h3{
-    font-size: 24px;
-    font-family: 'Bookman Old Style';
-    font-weight: bold;
-    color: var(--color9);
-    margin: 10px 10px 0px 20px;
-}
-
-.diretos img{
-    max-width: 40px;
-    height: 40px;
-    gap: 10px;
-    margin: 5px 20px 0px 0px;
-}
-
-.beneficios .ben-dir{
-    margin: 2px 20px 5px 30px;
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 16px;
-    font-family: "PT Serif", serif; 
-}
-
-.beneficiar{
-    grid-area: indireto;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 10px 20px 20px 10px;
-}
-
-.beneficiar .indiretos{
-    display: flex; 
-}
-
-.indiretos h3{
-    font-size: 24px;
-    font-family: 'Bookman Old Style';
-    font-weight: bold;
-    color: var(--color9);
-    margin: 10px 10px 0px 20px;
-} 
-
-.indiretos img{
-    max-width: 35px;
-    height: 35px;
-    gap: 10px;
-    margin: 5px 20px 0px 0px;
-}
-
-.beneficiar .ben-ind{
-    margin: 5px 20px 10px 30px;
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 16px;
-    font-family: "PT Serif", serif; 
 }
 
 .rodape{

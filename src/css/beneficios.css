@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --text-color1: #219bac;
-    --text-color2: darkblue;
-    --text-color3: #230479;
-    --text-color4: #197282;
-    --text-color5: #3e3e3e;
-    --text-color6: #000000;
-    --text-color7: #2c2caa;
-    --text-color8: #0f0ffd;
-    --bg-color1: #00113a;
-    --bg-color2: white;
-    --bg-color3: #dfdfdf;
-    --bg-color4: #64cbfb;
+    --color1: #219bac;
+    --color2: #64cbfb;
+    --color3: #9e9e9e;
+    --color4: #e9f8ff;
+    --color5: #d9e8ee;
+    --color6: #ada81e;
+    --color7: #b0c5f6;
+    --color8: #00113a;
+    --color9: #d4c92e;
+    --color10: #1d006d;
+    --color11: #888307;
 }
 
 *{
@@ -24,20 +23,38 @@
 }
 
 body{
-    background-color: var(--bg-color4);
+    background-color: var(--color4);
 }
 
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-auto-rows: 60px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 30px;
     grid-template-areas:
         'header     header      header      header      header      header'
-        'materia1   materia1    materia1    materia1    materia1    materia1'
-        'materia1   materia1    materia1    materia1    materia1    materia1'
-        'materia2   materia2    materia2    materia2    materia2    materia2'
-        'materia3   materia3    materia3    materia3    materia3    materia3'
-        'artigo1    artigo1     artigo2     artigo2     artigo2     artigo3'
+        'header     header      header      header      header      header'
+        'beneficio  beneficio   beneficio   beneficio   beneficio   beneficio'
+        'titulo     titulo      titulo      titulo      titulo      titulo'
+        'titulo     titulo      titulo      titulo      titulo      titulo'
+        'titulo     titulo      titulo      titulo      titulo      titulo'
+        'imagem     imagem      imagem      ambiental   ambiental   ambiental'
+        'imagem     imagem      imagem      ambiental   ambiental   ambiental'
+        'imagem     imagem      imagem      ambiental   ambiental   ambiental'
+        'imagem     imagem      imagem      ambiental   ambiental   ambiental'
+        'imagem     imagem      imagem      ambiental   ambiental   ambiental'
+        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
+        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
+        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
+        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
+        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
+        'imagem     imagem      imagem      economico   economico   economico'
+        'imagem     imagem      imagem      economico   economico   economico'
+        'imagem     imagem      imagem      economico   economico   economico'
+        'imagem     imagem      imagem      economico   economico   economico'
+        'imagem     imagem      imagem      economico   economico   economico'
+        'imagem     imagem      imagem      economico   economico   economico'
+        'imagem     imagem      imagem      economico   economico   economico'
+        'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
     ;
 }
@@ -47,12 +64,10 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 60px;
-    background-color: var(--bg-color1);
+    background-color: var(--color8);
 }
 
 .header .atalho{
-    grid-column: 1/2;
-    grid-row: 1/2;
     display: flex;
     font-family: "PT Serif", serif;
     font-weight: 700;
@@ -65,11 +80,11 @@ body{
 #menu{
     display: block;
     position: absolute;
-    width: 30%;
+    width: 350px;
     top: 60px;
     left: 0px;
     list-style: none;
-    background: #00113a;
+    background-color: var(--color8);
     transition: .6s;
     z-index: 1000;
     height: 0px;
@@ -87,7 +102,8 @@ body{
     display: block;
     padding: 1rem 1rem;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+    color: white;
+    border-top: 2px solid rgba(255, 255, 255, 0.07);
 }
 
 #btn-menu{
@@ -95,24 +111,25 @@ body{
     padding: .5rem 1rem;
     font-family: "PT Serif", serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     border: none;
     background: none;
-    color: var(--text-color1);
+    color: var(--color1);
     cursor: pointer;
     gap: .5rem;
 }
 
 #hamburger{
-    border-top: 2.5px solid;
-    width: 20px;
+    margin-top: 7px;
+    border-top: 3px solid;
+    width: 24px;
 }
 
 #hamburger::after, #hamburger::before {
     content: '';
     display: block;
-    width: 20px;
-    height: 2px;
+    width: 24px;
+    height: 2.5px;
     background: currentColor;
     margin-top: 5px;
     transition: .3s;
@@ -147,7 +164,7 @@ li a:hover{
 .titulo h1{
     font-family: 'Bookman Old Style';
     font-size: 40px;
-    color: #219bac;
+    color: var(--color1);
     margin-right: 20px;
 }
 
@@ -174,31 +191,196 @@ li a:hover{
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-size: 18px;
-    color: darkblue;   
+    color: var(--color10);   
 }
 
 .login #login_btn:hover{
-    background-color: #64cbfb;
+    background-color: var(--color2);
     color: white;
 }
 
-.sec1{
-    grid-area: materia1;
+.beneficios{
+    grid-area: beneficio;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 14px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color3);
 }
-.sec2{
-    grid-area: materia2;
+
+.tema-principal{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
 }
-.sec3{
-    grid-area: materia3;
+
+.tema-principal h1{
+    font-size: 48px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+
+    color: var(--color6);
+    text-shadow: 1px 1px 27px var(--color3);
 }
-.artigo1{
-    grid-area: artigo1;
+
+.tema-principal h2{
+    font-size: 24px;
+    font-style: italic;
+    color: var(--color11);
 }
-.artigo2{
-    grid-area: artigo2;
+
+/*--Estilizacao para o SlideShow--*/
+.slideshow-container{
+    grid-area: imagem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 800px;
+    height: 480px;
+    margin: 20px 15px 20px 35px;
 }
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.ambiental{
+    grid-area: ambiental;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 20px 25px 10px 10px;
+}
+
+.ambiental .ben-ambiental{
+    display: flex;
+}
+
+.ben-ambiental h3{
+    font-size: 22px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 8px 15px 0px 20px;
+}
+
+.ben-ambiental img{
+    max-width: 45px;
+    height: 45px;
+    gap: 10px;
+    margin: 2px 20px 0px 0px;
+}
+
+.ambiental .ben-amb{
+    margin: 0px 20px 5px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "PT Serif", serif;  
+}
+
+.tecnologico{
+    grid-area: tecnologico;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 25px 10px 10px;
+}
+
+.tecnologico .ben-tecnologico{
+    display: flex;
+}
+
+.ben-tecnologico h3{
+    font-size: 22px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 10px 10px 0px 20px;
+}
+
+.ben-tecnologico img{
+    max-width: 47px;
+    height: 47px;
+    margin: 0px 20px 0px 5px;
+}
+
+.tecnologico .ben-tec{
+    margin: 5px 20px 5px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "PT Serif", serif; 
+}
+
+.economicos{
+    grid-area: economico;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 25px 10px 10px;
+}
+
+.economicos .ben-economico{
+    display: flex; 
+}
+
+.ben-economico h3{
+    font-size: 21px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 10px 15px 0px 20px;
+} 
+
+.ben-economico img{
+    max-width: 45px;
+    height: 45px;
+    gap: 10px;
+    margin: 2px 15px 0px 0px;
+}
+
+.economicos .ben-eco{
+    margin: 10px 20px 10px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
 .rodape{
     grid-area: rodape;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: var(--color8);
+    font-size: 18px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 @media (max-width: 768px) {
