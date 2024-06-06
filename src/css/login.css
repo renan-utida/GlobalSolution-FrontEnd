@@ -36,7 +36,7 @@
         'login      login       login       login       login       login'
         'senha      senha       senha       senha       senha       senha'
         'senha      senha       senha       senha       senha       senha'
-        'rodape     rodape      rodape      rodape      rodape      rodape' 
+        'senha      senha       senha       senha       senha       senha'
         'rodape     rodape      rodape      rodape      rodape      rodape' 
     ;
 }
@@ -258,22 +258,16 @@ form button:hover {
 
 .rodape{
     grid-area: rodape;
-    grid-column: 1/7;
-    grid-row: 12/14;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-.rodape p{
     color: white;
     background-color: var(--color8);
     font-size: 18px;
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: italic;
-    padding: 8px 0 10px;
 }
 
 @media (max-width: 768px) {

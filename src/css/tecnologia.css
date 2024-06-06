@@ -6,12 +6,12 @@
     --color3: #9e9e9e;
     --color4: #e9f8ff;
     --color5: #d9e8ee;
-    --color6: #db7b3b;
+    --color6: #141488;
     --color7: #b0c5f6;
     --color8: #00113a;
-    --color9: #eb9358;
+    --color9: #2c33b4;
     --color10: #1d006d;
-    --color11: #943603;
+    --color11: #454de1;
 }
 
 *{
@@ -39,21 +39,29 @@ body{
         'titulo     titulo      titulo      titulo      titulo      titulo'
         'introducao introducao  introducao  introducao  introducao  introducao'
         'introducao introducao  introducao  introducao  introducao  introducao'
-        'introducao introducao  introducao  introducao  introducao  introducao'
-        'introducao introducao  introducao  introducao  introducao  introducao'
-        'introducao introducao  introducao  introducao  introducao  introducao'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
+        'python     python      python      python      python      python'
+        'python     python      python      python      python      python'
+        'python     python      python      python      python      python'
+        'python     python      python      python      python      python'
+        'python     python      python      python      python      python'
+        'edge       edge        edge        edge        edge        edge'
+        'edge       edge        edge        edge        edge        edge'
+        'edge       edge        edge        edge        edge        edge'
+        'edge       edge        edge        edge        edge        edge'
+        'edge       edge        edge        edge        edge        edge'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
         'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
     ;
@@ -199,7 +207,7 @@ li a:hover{
     color: white;
 }
 
-.problema{
+.tecnologia{
     grid-area: problema;
     display: flex;
     justify-content: center;
@@ -225,13 +233,13 @@ li a:hover{
     font-weight: bold;
 
     color: var(--color6);
-    text-shadow: 1px 1px 18px var(--color3);
+    text-shadow: 1px 1px 10px var(--color3);
 }
 
 .tema-principal h2{
-    font-size: 24px;
+    font-size: 22px;
     font-style: italic;
-    color: var(--color11);
+    color: var(--color10);
 }
 
 .box-introducao {
@@ -248,26 +256,69 @@ li a:hover{
 }
 
 .introducao h3{
-    font-size: 35px;
-    margin: 15px 10px 5px 20px;
+    font-size: 32px;
+    margin: 10px 20px 0px 20px;
     color: var(--color9);
     font-family: 'Bookman Old Style';
     text-shadow: 1px 1px 30px var(--color3);
 }
 
 .introducao img{
-    max-width: 45px;
-    height: 45px;
-    margin-top: 10px;
+    max-width: 50px;
+    height: 50px;
+    margin: 2px 0px 0px 7px;
 }
 
-.box-introducao p{
-    font-size: 18px;
-    font-weight: 500;
-    text-align: justify;
+.box-python{
+    grid-area: python;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 2px 20px 10px 20px;
+}
+
+.box-python h3{
+    font-size: 30px;
+    font-family: 'Bookman Old Style';
+    font-style: italic;
+    margin: 10px 20px 0px 20px;
+    color: var(--color11);
+}
+
+.box-python p{
     font-family: "PT Serif", serif;
-    margin: 2px 20px;
+    font-size: 17px;
+    text-align: justify;
     text-indent: 40px;
+    margin: 0px 20px 2px 20px;
+}
+
+.box-edge{
+    grid-area: edge;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 20px 0px 20px;
+}
+
+.box-edge h3{
+    font-size: 30px;
+    font-family: 'Bookman Old Style';
+    font-style: italic;
+    margin: 10px 20px 3px 20px;
+    color: var(--color11);
+}
+
+.box-edge p{
+    font-family: "PT Serif", serif;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 40px;
+    margin: 2px 20px;
 }
 
 /*--Estilizacao para o SlideShow--*/
@@ -278,9 +329,9 @@ li a:hover{
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    max-width: 580px;
-    height: 330px;
-    margin: 10px auto 10px auto;
+    max-width: 550px;
+    height: 350px;
+    margin: 20px auto 20px auto;
 }
 
 .mySlides {
@@ -305,63 +356,6 @@ img {
     to {opacity: 1}
 }
 
-.dados{
-    grid-area: ameaca;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 10px 0px 8px 25px;
-}
-
-.dados p{
-    margin: 10px 20px  0px 20px;
-    text-indent: 40px;
-    font-size: 17px;
-    font-family: "PT Serif", serif;
-    text-align: justify;
-}
-
-.dados .branqueamento{
-    margin: 5px 20px 5px 40px;
-    text-indent: 20px;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.perigo{
-    grid-area: perigo;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 12px 0px 20px 25px;
-}
-
-.perigo .alarme{
-    display: flex; 
-}
-
-.alarme h3{
-    font-size: 24px;
-    font-family: 'Bookman Old Style';
-    font-weight: bold;
-    color: var(--color9);
-    margin: 15px 10px 5px 20px;
-} 
-
-.alarme img{
-    max-width: 35px;
-    height: 35px;
-    gap: 10px;
-    margin: 10px 20px 0px 0px;
-}
-
-.perigo .pesquisas{
-    margin: 5px 20px 10px 40px;
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 17px;
-}
-
 .rodape{
     grid-area: rodape;
     display: flex;
@@ -376,8 +370,7 @@ img {
     font-style: italic;
 }
 
+
 @media (max-width: 768px) {
 
 }
-
-
