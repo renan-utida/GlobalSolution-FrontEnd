@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --text-color1: #219bac;
-    --text-color2: darkblue;
-    --text-color3: #230479;
-    --text-color4: #197282;
-    --text-color5: #3e3e3e;
-    --text-color6: #000000;
-    --text-color7: #2c2caa;
-    --text-color8: #0f0ffd;
-    --bg-color1: #00113a;
-    --bg-color2: white;
-    --bg-color3: #dfdfdf;
-    --bg-color4: #64cbfb;
+    --color1: #219bac;
+    --color2: #1692cb;
+    --color3: #013f56;
+    --color4: #02628c;
+    --color5: #3e3e3e;
+    --color6: #2c2caa;
+    --color7: #2c5cca;
+    --color8: #00174b;
+    --color9: #e9f8ff;
+    --color10: #64cbfb;
+    --color11: #cce0ef;
 }
 
 *{
@@ -23,21 +22,66 @@
     text-decoration: none;
 }
 
-body{
-    background-color: var(--bg-color4);
-}
-
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-auto-rows: 60px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 30px;
     grid-template-areas:
         'header     header      header      header      header      header'
-        'materia1   materia1    materia1    materia1    materia1    materia1'
-        'materia1   materia1    materia1    materia1    materia1    materia1'
-        'materia2   materia2    materia2    materia2    materia2    materia2'
-        'materia3   materia3    materia3    materia3    materia3    materia3'
-        'artigo1    artigo1     artigo2     artigo2     artigo2     artigo3'
+        'header     header      header      header      header      header'
+        'titulo     titulo      titulo      titulo      titulo      titulo'
+        'titulo     titulo      titulo      titulo      titulo      titulo'
+        'titulo     titulo      titulo      titulo      titulo      titulo'
+        'titulo     titulo      titulo      titulo      titulo      titulo'
+        'titulo     titulo      titulo      titulo      titulo      titulo'
+        'recife     recife      recife      recife      recife      recife'
+        'recife     recife      recife      recife      recife      recife'
+        'recife     recife      recife      recife      recife      recife'
+        'recife     recife      recife      recife      recife      recife'
+        'recife     recife      recife      recife      recife      recife'
+        'recife     recife      recife      recife      recife      recife'
+        'recife     recife      recife      recife      recife      recife'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+        'pontos     pontos      pontos      pontos      pontos      pontos'
+        'pontos     pontos      pontos      pontos      pontos      pontos'
+        'pontos     pontos      pontos      pontos      pontos      pontos'
+        'conheca    conheca     conheca     conheca     conheca     conheca'
+        'conheca    conheca     conheca     conheca     conheca     conheca'
+        'conheca    conheca     conheca     conheca     conheca     conheca'
+        'conheca    conheca     conheca     conheca     conheca     conheca'
+        'conheca    conheca     conheca     conheca     conheca     conheca'
+        'conheca    conheca     conheca     conheca     conheca     conheca'
+        'conheca    conheca     conheca     conheca     conheca     conheca'
+        'ocean      ocean       ocean       clean       clean       clean'
+        'ocean      ocean       ocean       clean       clean       clean'
+        'ocean      ocean       ocean       clean       clean       clean'
+        'ocean      ocean       ocean       clean       clean       clean'
+        'ocean      ocean       ocean       clean       clean       clean'
+        'doacao     doacao      doacao      doacao      doacao      doacao'
+        'doacao     doacao      doacao      doacao      doacao      doacao'
+        'doacao     doacao      doacao      doacao      doacao      doacao'
+        'doacao     doacao      doacao      doacao      doacao      doacao'
+        'doacao     doacao      doacao      doacao      doacao      doacao'
+        'doacao     doacao      doacao      doacao      doacao      doacao'
+        'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
     ;
 }
@@ -47,12 +91,10 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 60px;
-    background-color: var(--bg-color1);
+    background-color: var(--color8);
 }
 
 .header .atalho{
-    grid-column: 1/2;
-    grid-row: 1/2;
     display: flex;
     font-family: "PT Serif", serif;
     font-weight: 700;
@@ -69,7 +111,7 @@ body{
     top: 60px;
     left: 0px;
     list-style: none;
-    background: #00113a;
+    background-color: var(--color8);
     transition: .6s;
     z-index: 1000;
     height: 0px;
@@ -91,6 +133,12 @@ body{
     border-top: 2px solid rgba(255, 255, 255, 0.07);
 }
 
+#menu #selecionado{
+    color: #454de1;
+    font-size: 22px;
+    font-weight: bold;
+}
+
 #btn-menu{
     display: flex;
     padding: .5rem 1rem;
@@ -99,7 +147,7 @@ body{
     font-size: 22px;
     border: none;
     background: none;
-    color: var(--text-color1);
+    color: white;
     cursor: pointer;
     gap: .5rem;
 }
@@ -149,7 +197,7 @@ li a:hover{
 .titulo h1{
     font-family: 'Bookman Old Style';
     font-size: 40px;
-    color: #219bac;
+    color: var(--color1);
     margin-right: 20px;
 }
 
@@ -176,31 +224,249 @@ li a:hover{
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-size: 18px;
-    color: darkblue;   
+    color: var(--color8);   
 }
 
 .login #login_btn:hover{
-    background-color: #64cbfb;
+    background-color: var(--color2);
     color: white;
 }
 
-.sec1{
-    grid-area: materia1;
+.topo{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 40px 32px 40px;
 }
-.sec2{
-    grid-area: materia2;
+
+.topo h1{
+    font-family: 'Bookman Old Style';
+    font-size: 64px;
+    color: var(--color1);
 }
-.sec3{
-    grid-area: materia3;
+
+.topo h2{
+    font-family: 'Bookman Old Style';
+    font-size: 26px;
+    font-style: italic;
+    color: var(--color3);
 }
-.artigo1{
-    grid-area: artigo1;
+
+.recife{
+    grid-area: recife;
+    margin: 0px 45px 5px 45px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--color11);
 }
-.artigo2{
-    grid-area: artigo2;
+
+.recife h3{
+    font-size: 34px;
+    font-weight: bolder;
+    font-family: 'Bookman Old Style';
+    color: var(--color4);
+    margin: 10px;
 }
+.recife p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    text-indent: 40px;
+    margin: 10px 14px 0px 14px;
+}
+
+/* Slideshow container */
+.slideshow-container{
+    grid-area: slideshow;
+    max-width: 800px;
+    max-height: 550px;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    overflow: hidden; /* Evitar que as imagens ultrapassem o container */
+}
+  
+/* Hide the images by default */
+.mySlides img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/4 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.pontos{
+    grid-area: pontos;
+    display: flex;
+    justify-content: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 35px 3px;
+    background-color: #898989;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #4b4a4a;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.conheca{
+    grid-area: conheca;
+    margin: 0px 45px 0px 45px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--color11);
+}
+
+.conheca h3{
+    font-size: 34px;
+    font-weight: bolder;
+    font-family: 'Bookman Old Style';
+    color: var(--color4);
+    margin: 10px;
+}
+.conheca p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    text-indent: 40px;
+    margin: 10px 14px 0px 14px;
+}
+
+.ocean{
+    grid-area: ocean;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45px;
+    border-radius: 0px 0px 0px 15px;
+    background-color: var(--color11);
+}
+
+.ocean img{
+    margin: 0px 50px 50px 300px;
+    max-width: 350px;
+    height: 140px;
+}
+
+.clean{
+    grid-area: clean;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 45px;
+    border-radius: 0px 0px 15px 0px;
+    background-color: var(--color11);
+}
+
+.clean h1{
+    font-family: 'Bookman Old Style';
+    font-size: 60px;
+    color: var(--color1);
+    margin: 0px 10px 50px 50px;
+}
+
+.clean img{
+    margin: 0px 130px 50px 10px ;
+    width: 70px;
+    height: 70px;
+}
+
+.doacao{
+    grid-area: doacao;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.doacao h3{
+    font-size: 24px;
+}
+
+.doacao p{
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.doacao .final{
+    font-size: 21px;
+    font-style: italic;
+}
+
 .rodape{
     grid-area: rodape;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: var(--color8);
+    font-size: 18px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 @media (max-width: 768px) {

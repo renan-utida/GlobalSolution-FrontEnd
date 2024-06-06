@@ -19,7 +19,7 @@
                         <span id="hamburger"></span>
                     </button> 
                     <ul id="menu">
-                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="index.html" id="selecionado">Página Inicial</a></li>
                         <li><a href="problema.html">Solução Problema</a></li>
                         <li><a href="tecnologia.html">Tecnologia</a></li>
                         <li><a href="objetivos.html">Objetivos</a></li>
@@ -39,11 +39,80 @@
                 <a href="login.html"><button id="login_btn">Login</button></a>
             </div>
         </div>
-        <div class="sec1">Materia 1</div>
-        <div class="sec2">Materia 2</div>
-        <div class="sec3">Materia 3</div>
-        <div class="artigo1">Artigo 1</div>
-        <div class="artigo2">Artigo 2</div>
+        <div class="topo">
+            <h1>Clean Ocean</h1>
+            <h2>Protegendo nossas águas, preservando nosso futuro!​</h2>
+        </div>
+        
+        <div class="recife">
+            <h3>O que são os Recifes de Coral?</h3>
+            <p>Os recifes de corais são ecossistemas marinhos de grande importância ecológica e econômica. São considerados os ecossistemas mais diversos do ambiente marinho, com uma em cada quatro espécies marinhas vivendo neles, incluindo 65% dos peixes (Ministério do Meio Ambiente do Brasil).</p>
+            <p>Porém, atualmente os recifes de coral estão passando por problemas ambientais. Sofrendo um processo chamado branqueamento, ao qual os corais estão perdendo sua principal fonte de energia e podem morrer se as condições não melhorarem.</p>
+        </div>
+
+        <!-- Slideshow container -->
+        <section class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="./src/img/recifes-coral.png" style="width:100%">
+                <div class="text">Recife de Corais</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="./src/img/recifes1.png" style="width:100%">
+                <div class="text">Recifes 1</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="./src/img/branqueamento.png" style="width:100%">
+                <div class="text">Branqueamento</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="./src/img/poluicao-costa.png" style="width:100%">
+                <div class="text">Poluição</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center" class="pontos">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        
+        <div class="conheca">
+            <h3>Quem somos nós?</h3>
+            <p>A Clean Ocean é uma empresa dedicada à sustentabilidade dos oceanos e à preservação dos recifes de corais, desenvolvendo soluções inovadoras para proteger a biodiversidade marinha e combater a poluição dos oceanos.</p>
+            <p>Em parceria com o Oceans 20 (O20), a Clean Ocean fortalece iniciativas globais para a sustentabilidade dos oceanos, promovendo práticas ecologicamente responsáveis e abordando desafios críticos como a destruição de habitats e a poluição marinha.</p>
+        </div>
+
+        <div class="clean">
+            <h1>Clean Ocean</h1>
+            <img src="./src/img/clean-ocean-logo.png" alt="Ocean">
+        </div>
+        <div class="ocean">
+            <img src="./src/img/oceans20-logo.png" alt="Logo da O20">
+        </div>
+
+        <div class="doacao">
+            <h3>Caso queiram fazer doação para incentivar o nosso programa!</h3>
+            <p>PIX - (11)90000-00000</p>
+            <p>Juntos somos mais fortes!</p>
+            <p class="final">Protegendo nossas águas, preservando nosso futuro!</p>
+        </div>
+
+
         <div class="rodape">
             <p>Clean Ocean - Global Solution - @Todos os direitos reservados</p>
         </div>
