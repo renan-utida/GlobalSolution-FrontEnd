@@ -42,18 +42,25 @@ body{
         'introducao introducao  introducao  introducao  introducao  introducao'
         'introducao introducao  introducao  introducao  introducao  introducao'
         'introducao introducao  introducao  introducao  introducao  introducao'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'ameaca     ameaca      ameaca      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
-        'perigo     perigo      perigo      imagem      imagem      imagem'
+        'ameaca     ameaca      ameaca      dados       dados       dados'
+        'ameaca     ameaca      ameaca      dados       dados       dados'
+        'ameaca     ameaca      ameaca      dados       dados       dados'
+        'ameaca     ameaca      ameaca      dados       dados       dados'
+        'ameaca     ameaca      ameaca      dados       dados       dados'
+        'ameaca     ameaca      ameaca      dados       dados       dados'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
+        'imagem     imagem      imagem      imagem      imagem      imagem'
         'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
     ;
@@ -248,8 +255,8 @@ li a:hover{
 }
 
 .introducao h3{
-    font-size: 35px;
-    margin: 15px 10px 5px 20px;
+    font-size: 37px;
+    margin: 0px 10px 5px 20px;
     color: var(--color9);
     font-family: 'Bookman Old Style';
     text-shadow: 1px 1px 30px var(--color3);
@@ -258,7 +265,7 @@ li a:hover{
 .introducao img{
     max-width: 45px;
     height: 45px;
-    margin-top: 10px;
+    margin: 0px 0px 5px 5px;
 }
 
 .box-introducao p{
@@ -270,6 +277,66 @@ li a:hover{
     text-indent: 40px;
 }
 
+.perigo{
+    grid-area: ameaca;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 0px 0px 8px 25px;
+}
+
+.perigo p{
+    margin: 10px 20px  0px 20px;
+    text-indent: 40px;
+    font-size: 17px;
+    font-family: "PT Serif", serif;
+    text-align: justify;
+}
+
+.perigo .branqueamento{
+    margin: 5px 20px 5px 40px;
+    text-indent: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.dados{
+    grid-area: dados;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 0px 20px 8px 25px;
+}
+
+.dados .alarme{
+    display: flex; 
+}
+
+.alarme h3{
+    font-size: 23px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 12px 10px 5px 20px;
+} 
+
+.alarme img{
+    display: flex;
+    max-width: 35px;
+    height: 35px;
+    gap: 10px;
+    margin: 5px 20px 0px 0px;
+}
+
+.dados .pesquisas{
+    display: flex;
+    flex-direction: column;
+    margin: 4px 20px 10px 40px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 17px;
+}
+
 /*--Estilizacao para o SlideShow--*/
 .slideshow-container{
     grid-area: imagem;
@@ -278,8 +345,8 @@ li a:hover{
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    max-width: 580px;
-    height: 330px;
+    max-width: 640px;
+    height: 360px;
     margin: 10px auto 10px auto;
 }
 
@@ -303,63 +370,6 @@ img {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-}
-
-.dados{
-    grid-area: ameaca;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 10px 0px 8px 25px;
-}
-
-.dados p{
-    margin: 10px 20px  0px 20px;
-    text-indent: 40px;
-    font-size: 17px;
-    font-family: "PT Serif", serif;
-    text-align: justify;
-}
-
-.dados .branqueamento{
-    margin: 5px 20px 5px 40px;
-    text-indent: 20px;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.perigo{
-    grid-area: perigo;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color5);
-    border-radius: 10px;
-    margin: 12px 0px 20px 25px;
-}
-
-.perigo .alarme{
-    display: flex; 
-}
-
-.alarme h3{
-    font-size: 24px;
-    font-family: 'Bookman Old Style';
-    font-weight: bold;
-    color: var(--color9);
-    margin: 15px 10px 5px 20px;
-} 
-
-.alarme img{
-    max-width: 35px;
-    height: 35px;
-    gap: 10px;
-    margin: 10px 20px 0px 0px;
-}
-
-.perigo .pesquisas{
-    margin: 5px 20px 10px 40px;
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 17px;
 }
 
 .rodape{

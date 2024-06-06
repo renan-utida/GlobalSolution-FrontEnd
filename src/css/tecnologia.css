@@ -256,8 +256,8 @@ li a:hover{
 }
 
 .introducao h3{
-    font-size: 32px;
-    margin: 10px 20px 0px 20px;
+    font-size: 33px;
+    margin: 4px 20px 0px 20px;
     color: var(--color9);
     font-family: 'Bookman Old Style';
     text-shadow: 1px 1px 30px var(--color3);
@@ -266,7 +266,7 @@ li a:hover{
 .introducao img{
     max-width: 50px;
     height: 50px;
-    margin: 2px 0px 0px 7px;
+    margin-left: 10px;
 }
 
 .box-python{

@@ -41,20 +41,20 @@ body{
         'introducao introducao  introducao  introducao  introducao  introducao'
         'introducao introducao  introducao  introducao  introducao  introducao'
         'introducao introducao  introducao  introducao  introducao  introducao'
-        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
-        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
-        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
-        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
-        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
-        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
-        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
-        'imagem     imagem      imagem      ameaca      ameaca      ameaca'
-        'imagem     imagem      imagem      perigo      perigo      perigo'
-        'imagem     imagem      imagem      perigo      perigo      perigo'
-        'imagem     imagem      imagem      perigo      perigo      perigo'
-        'imagem     imagem      imagem      perigo      perigo      perigo'
-        'imagem     imagem      imagem      perigo      perigo      perigo'
-        'imagem     imagem      imagem      perigo      perigo      perigo'
+        'imagem     imagem      imagem      especifico  especifico  especifico'
+        'imagem     imagem      imagem      especifico  especifico  especifico'
+        'imagem     imagem      imagem      especifico  especifico  especifico'
+        'imagem     imagem      imagem      especifico  especifico  especifico'
+        'imagem     imagem      imagem      especifico  especifico  especifico'
+        'imagem     imagem      imagem      especifico  especifico  especifico'
+        'imagem     imagem      imagem      especifico  especifico  especifico'
+        'imagem     imagem      imagem      especifico  especifico  especifico'
+        'imagem     imagem      imagem      esperado    esperado    esperado'
+        'imagem     imagem      imagem      esperado    esperado    esperado'
+        'imagem     imagem      imagem      esperado    esperado    esperado'
+        'imagem     imagem      imagem      esperado    esperado    esperado'
+        'imagem     imagem      imagem      esperado    esperado    esperado'
+        'imagem     imagem      imagem      esperado    esperado    esperado'
         'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
     ;
@@ -221,7 +221,7 @@ li a:hover{
 }
 
 .tema-principal h1{
-    font-size: 42px;
+    font-size: 48px;
     font-family: 'Bookman Old Style';
     font-weight: bold;
 
@@ -249,7 +249,7 @@ li a:hover{
 }
 
 .introducao h3{
-    font-size: 40px;
+    font-size: 36px;
     margin: 0px 10px 5px 20px;
     color: var(--color9);
     font-family: 'Bookman Old Style';
@@ -307,7 +307,7 @@ img {
 }
 
 .especifico{
-    grid-area: ameaca;
+    grid-area: especifico;
     background-color: var(--color5);
     border-radius: 10px;
     margin: 15px 25px 10px 0px;
@@ -337,13 +337,11 @@ img {
     text-indent: 20px;
     text-align: justify;
     font-size: 17px;
-    font-family: "PT Serif", serif;
-    font-style: italic;
-    
+    font-family: "PT Serif", serif;  
 }
 
 .esperado{
-    grid-area: perigo;
+    grid-area: esperado;
     display: flex;
     flex-direction: column;
     background-color: var(--color5);

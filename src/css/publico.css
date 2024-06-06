@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color1: #219bac;
+    --color2: #64cbfb;
+    --color3: #9e9e9e;
+    --color4: #e9f8ff;
+    --color5: #d9e8ee;
+    --color6: #8711a4;
+    --color7: #b0c5f6;
+    --color8: #00113a;
+    --color9: #c145df;
+    --color10: #1d006d;
+    --color11: #5e0475;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--color4);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 30px;
+    grid-template-areas:
+    'header     header      header      header      header      header'
+    'header     header      header      header      header      header'
+    'publico    publico     publico     publico     publico     publico'
+    'titulo     titulo      titulo      titulo      titulo      titulo'
+    'titulo     titulo      titulo      titulo      titulo      titulo'
+    'titulo     titulo      titulo      titulo      titulo      titulo'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'imagem     imagem      imagem      imagem      imagem      imagem'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'alvo       alvo        direto      direto      indireto    indireto'
+    'rodape     rodape      rodape      rodape      rodape      rodape' 
+    'rodape     rodape      rodape      rodape      rodape      rodape'
+    ;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 60px;
+    background-color: var(--color8);
+}
+
+.header .atalho{
+    display: flex;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#menu{
+    display: block;
+    position: absolute;
+    width: 350px;
+    top: 60px;
+    left: 0px;
+    list-style: none;
+    background-color: var(--color8);
+    transition: .6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#nav.active #menu{
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: auto;
+}
+
+#menu a{
+    display: block;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    color: white;
+    border-top: 2px solid rgba(255, 255, 255, 0.07);
+}
+
+#btn-menu{
+    display: flex;
+    padding: .5rem 1rem;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 22px;
+    border: none;
+    background: none;
+    color: var(--color1);
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#hamburger{
+    margin-top: 7px;
+    border-top: 3px solid;
+    width: 24px;
+}
+
+#hamburger::after, #hamburger::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburger{
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before{
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+li a:hover{
+    background-color: rgba(255, 255, 255, 0.421);
+}
+
+.header .titulo{
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo h1{
+    font-family: 'Bookman Old Style';
+    font-size: 40px;
+    color: var(--color1);
+    margin-right: 20px;
+}
+
+.titulo img{
+    width: 45px;
+    height: 45px;
+}
+
+.header .login{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 15px;
+}
+
+.login #login_btn{
+    padding: 6px 18px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.9s ease 0s;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color10);   
+}
+
+.login #login_btn:hover{
+    background-color: var(--color2);
+    color: white;
+}
+
+.publico{
+    grid-area: publico;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 14px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color3);
+}
+
+.tema-principal{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+.tema-principal h1{
+    font-size: 42px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+
+    color: var(--color6);
+    text-shadow: 1px 1px 20px var(--color3);
+}
+
+.tema-principal h2{
+    font-size: 24px;
+    font-style: italic;
+    color: var(--color11);
+}
+
+/*--Estilizacao para o SlideShow--*/
+.slideshow-container{
+    grid-area: imagem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 900px;
+    height: 400px;
+    margin: 5px auto 10px auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.alvo{
+    grid-area: alvo;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 10px 20px 20px;
+}
+
+.alvo .publico-alvo{
+    display: flex;
+}
+
+.publico-alvo h3{
+    font-size: 24px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 10px 10px 0px 20px;
+}
+
+.publico-alvo img{
+    max-width: 40px;
+    height: 40px;
+    gap: 10px;
+    margin: 5px 20px 0px 0px;
+}
+
+.alvo .pub-alv{
+    margin: 2px 20px 5px 30px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: "PT Serif", serif; 
+}
+
+.beneficios{
+    grid-area: direto;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 10px 20px 10px;
+}
+
+.beneficios .diretos{
+    display: flex;
+}
+
+.diretos h3{
+    font-size: 24px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 10px 10px 0px 20px;
+}
+
+.diretos img{
+    max-width: 40px;
+    height: 40px;
+    gap: 10px;
+    margin: 5px 20px 0px 0px;
+}
+
+.beneficios .ben-dir{
+    margin: 2px 20px 5px 30px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "PT Serif", serif; 
+}
+
+.beneficiar{
+    grid-area: indireto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color5);
+    border-radius: 10px;
+    margin: 10px 20px 20px 10px;
+}
+
+.beneficiar .indiretos{
+    display: flex; 
+}
+
+.indiretos h3{
+    font-size: 24px;
+    font-family: 'Bookman Old Style';
+    font-weight: bold;
+    color: var(--color9);
+    margin: 10px 10px 0px 20px;
+} 
+
+.indiretos img{
+    max-width: 35px;
+    height: 35px;
+    gap: 10px;
+    margin: 5px 20px 0px 0px;
+}
+
+.beneficiar .ben-ind{
+    margin: 5px 20px 10px 30px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "PT Serif", serif; 
+}
+
+.rodape{
+    grid-area: rodape;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: var(--color8);
+    font-size: 18px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+
+}
