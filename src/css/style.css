@@ -256,7 +256,7 @@ li a:hover{
 .recife{
     grid-area: recife;
     margin: 0px 45px 5px 45px;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px;
     background-color: var(--color11);
 }
 
@@ -265,14 +265,14 @@ li a:hover{
     font-weight: bolder;
     font-family: 'Bookman Old Style';
     color: var(--color4);
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
 }
 .recife p{
     font-size: 18px;
     font-weight: 500;
     text-align: justify;
     text-indent: 40px;
-    margin: 10px 14px 0px 14px;
+    margin: 5px 14px 0px 14px;
 }
 
 /* Slideshow container */
@@ -405,9 +405,9 @@ li a:hover{
 }
 
 .ocean img{
-    margin: 0px 50px 50px 300px;
-    max-width: 350px;
-    height: 140px;
+    margin: 0px 20px 30px 200px;
+    max-width: 310px;
+    height: 120px;
 }
 
 .clean{
@@ -422,15 +422,15 @@ li a:hover{
 
 .clean h1{
     font-family: 'Bookman Old Style';
-    font-size: 60px;
+    font-size: 45px;
     color: var(--color1);
-    margin: 0px 10px 50px 50px;
+    margin: 0px 10px 30px 20px;
 }
 
 .clean img{
-    margin: 0px 130px 50px 10px ;
-    width: 70px;
-    height: 70px;
+    margin: 0px 45px 50px 10px ;
+    width: 58px;
+    height: 58px;
 }
 
 .doacao{
@@ -469,6 +469,244 @@ li a:hover{
     font-style: italic;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 980px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 30px;
+        grid-template-areas:
+            'header     header      header      header      header      header'
+            'header     header      header      header      header      header'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'pontos     pontos      pontos      pontos      pontos      pontos'
+            'pontos     pontos      pontos      pontos      pontos      pontos'
+            'pontos     pontos      pontos      pontos      pontos      pontos'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'ocean      ocean       ocean       clean       clean       clean'
+            'ocean      ocean       ocean       clean       clean       clean'
+            'ocean      ocean       ocean       clean       clean       clean'
+            'ocean      ocean       ocean       clean       clean       clean'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+        ;
+    }
 
+    .topo h2{
+        font-size: 23px;
+    }
+
+    .recife p{
+        font-size: 17px;
+    }
+
+    .slideshow-container{
+        max-width: 650px;
+        max-height: 540px;
+    }
+    
+    .ocean img{
+        margin: 0px 15px 35px 55px;
+        max-width: 250px;
+        height: 100px;
+    }
+    
+    .clean h1{
+        font-size: 35px;
+        color: var(--color1);
+        margin: 0px 10px 25px 10px;
+    }
+    
+    .clean img{
+        margin: 0px 10px 40px 10px ;
+        width: 55px;
+        height: 55px;
+    }
+
+    .doacao h3{
+        font-size: 22px;
+    }
+    
+    .doacao p{
+        margin-top: 3px;
+        font-size: 18px;
+    }
+    
+    .doacao .final{
+        font-size: 20px;
+        font-style: italic;
+    }
 }
+
+@media screen and (max-width: 750px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 30px;
+        grid-template-areas:
+            'header     header      header      header      header      header'
+            'header     header      header      header      header      header'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'recife     recife      recife      recife      recife      recife'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'slideshow  slideshow   slideshow   slideshow   slideshow   slideshow'
+            'pontos     pontos      pontos      pontos      pontos      pontos'
+            'pontos     pontos      pontos      pontos      pontos      pontos'
+            'pontos     pontos      pontos      pontos      pontos      pontos'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'conheca    conheca     conheca     conheca     conheca     conheca'
+            'ocean      ocean       ocean       clean       clean       clean'
+            'ocean      ocean       ocean       clean       clean       clean'
+            'ocean      ocean       ocean       clean       clean       clean'
+            'ocean      ocean       ocean       clean       clean       clean'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'doacao     doacao      doacao      doacao      doacao      doacao'
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+        ;
+    }
+
+    .titulo h1{
+        font-size: 32px;
+        color: var(--color1);
+        margin-right: 12px;
+    }
+    
+    .titulo img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .topo h1{
+        font-family: 'Bookman Old Style';
+        font-size: 56px;
+        color: var(--color1);
+    }
+    
+    .topo h2{
+        font-family: 'Bookman Old Style';
+        font-size: 20px;
+        font-style: italic;
+        color: var(--color3);
+    }
+
+    .slideshow-container{
+        max-width: 575px;
+        max-height: 475px;
+    }
+    .ocean img{
+        margin: 0px 15px 35px 55px;
+        max-width: 250px;
+        height: 100px;
+    }
+    
+    .clean h1{
+        font-size: 35px;
+        color: var(--color1);
+        margin: 0px 10px 25px 10px;
+    }
+    
+    .doacao h3{
+        font-size: 18px;
+    }
+    
+    .doacao p{
+        margin-top: 3px;
+        font-size: 16px;
+    }
+    
+    .doacao .final{
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
+
