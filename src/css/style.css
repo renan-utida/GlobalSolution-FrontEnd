@@ -655,14 +655,14 @@ li a:hover{
     }
 
     .titulo h1{
-        font-size: 32px;
+        font-size: 30px;
         color: var(--color1);
-        margin-right: 12px;
+        margin-right: 10px;
     }
     
     .titulo img{
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
     }
     
     .topo h1{
@@ -708,5 +708,4 @@ li a:hover{
         font-style: italic;
     }
 }
-
 
