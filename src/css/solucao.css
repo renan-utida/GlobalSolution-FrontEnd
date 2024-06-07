@@ -53,6 +53,7 @@ body{
         'futuro     futuro      futuro      futuro      futuro      futuro'
         'futuro     futuro      futuro      futuro      futuro      futuro'
         'futuro     futuro      futuro      futuro      futuro      futuro'
+        'futuro     futuro      futuro      futuro      futuro      futuro'
         'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
         'rodape     rodape      rodape      rodape      rodape      rodape' 
@@ -390,6 +391,198 @@ img {
     font-style: italic;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 980px){
 
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 30px;
+        grid-template-areas:
+            'header     header      header      header      header      header'
+            'header     header      header      header      header      header'
+            'solucao    solucao     solucao     solucao     solucao     solucao'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+        ;
+    }
+
+    .mudanca{
+        grid-area: mudanca;
+        background-color: var(--color5);
+        border-radius: 10px;
+        margin: 15px 25px 10px 25px;
+    }
+    
+    .comunidade h3{
+        font-size: 25px;
+    }
+    
+    .comunidade img{
+        max-width: 45px;
+        height: 45px;
+        gap: 10px;
+        margin-right: 20px;
+    }
+    
+    .mudanca .ambiente{
+        font-size: 17px;
+    }
+    
+    .vida{
+        margin: 10px 25px;
+    }
+    
+    .diaria h3{
+        font-size: 24px;
+    }
+    
+    .diaria img{
+        max-width: 38px;
+        height: 38px;
+    }
+    
+    .vida .melhoria{
+        margin: 5px 20px 5px 40px;
+        font-size: 16px;
+    }
+    
+    .beneficios{
+        margin: 10px 25px 20px 25px;
+    }
+
+    .prazo h3{
+        font-size: 25px;
+        margin: 8px 14px 0px 20px;
+    } 
+    
+    .prazo img{
+        max-width: 40px;
+        height: 40px;
+        margin: 4px 15px 0px 0px;
+    }
+    
+    .beneficios .longo-prazo{
+        font-size: 17px;
+    }
+    
+    .slideshow-container{
+        max-width: 700px;
+        height: 400px;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 750px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 30px;
+        grid-template-areas:
+            'header     header      header      header      header      header'
+            'header     header      header      header      header      header'
+            'solucao    solucao     solucao     solucao     solucao     solucao'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'mudanca    mudanca     mudanca     mudanca     mudanca     mudanca'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'diaria     diaria      diaria      diaria      diaria      diaria'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'futuro     futuro      futuro      futuro      futuro      futuro'
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+        ;
+    }
+
+    .titulo h1{
+        font-size: 30px;
+        color: var(--color1);
+        margin-right: 10px;
+    }
+    
+    .titulo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .solucao{
+        font-size: 8px;
+    }
+    
+    .tema-principal h1{
+        font-size: 42px;
+    }
+    
+    .tema-principal h2{
+        font-size: 21px;
+    }
+
+    .slideshow-container{
+        max-width: 520px;
+        height: 400px;
+        margin: 15px auto;
+    }
 }

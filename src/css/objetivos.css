@@ -121,7 +121,7 @@ body{
     font-size: 22px;
     border: none;
     background: none;
-    color: var(--color1);
+    color: white;
     cursor: pointer;
     gap: .5rem;
 }
@@ -256,15 +256,15 @@ li a:hover{
 
 .introducao h3{
     font-size: 36px;
-    margin: 0px 10px 5px 20px;
+    margin: 5px 10px 5px 20px;
     color: var(--color9);
     font-family: 'Bookman Old Style';
     text-shadow: 1px 1px 30px var(--color3);
 }
 
 .introducao img{
-    max-width: 50px;
-    height: 50px;
+    max-width: 46px;
+    height: 46px;
     margin-left: 5px;
 }
 
@@ -396,6 +396,165 @@ img {
     font-style: italic;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 980px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 30px;
+        grid-template-areas:
+            'header     header      header      header      header      header'
+            'header     header      header      header      header      header'
+            'objetivo   objetivo    objetivo    objetivo    objetivo    objetivo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+        ;
+    }
+
+    .slideshow-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        max-width: 600px;
+        height: 400px;
+        margin: 0px auto;
+    }
+
+    .especifico{
+        margin: 0px 25px 10px 25px;
+    }
+
+    .esperado{
+        margin: 10px 25px 15px 25px;
+    }
+
+    .tema-principal h1{
+        font-size: 46px;
+    }
+    
+    .tema-principal h2{
+        font-size: 23px;
+    }
+    
+    .introducao h3{
+        font-size: 32px;
+        margin: 8px 10px 5px 20px;
+    }
+
+    .introducao img{
+        max-width: 40px;
+        height: 40px;
+        margin: 7px 0px 0px 5px;
+    }
+    
+    .box-introducao p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 30px;
+        grid-template-areas:
+            'header     header      header      header      header      header'
+            'header     header      header      header      header      header'
+            'objetivo   objetivo    objetivo    objetivo    objetivo    objetivo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'introducao introducao  introducao  introducao  introducao  introducao'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'especifico especifico  especifico  especifico  especifico  especifico'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'esperado   esperado    esperado    esperado    esperado    esperado'
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+        ;
+    }
+
+    .titulo h1{
+        font-size: 32px;
+        color: var(--color1);
+        margin-right: 12px;
+    }
+    
+    .titulo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .slideshow-container{
+        max-width: 500px;
+    }
 
 }

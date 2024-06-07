@@ -98,7 +98,7 @@
     font-size: 22px;
     border: none;
     background: none;
-    color: var(--color1);
+    color: white;
     cursor: pointer;
     gap: .5rem;
 }
@@ -270,6 +270,24 @@ form button:hover {
     font-style: italic;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 750px){
 
+    .titulo h1{
+        font-size: 32px;
+        color: var(--color1);
+        margin-right: 12px;
+    }
+    
+    .titulo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .misterio h1 {
+        font-size: 28px;
+    }
+    
+    .misterio h2{
+        font-size: 21px;
+    }  
 }

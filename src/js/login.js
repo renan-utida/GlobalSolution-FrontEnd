@@ -1,3 +1,6 @@
+//-------------------------------------------------------------//
+//Funcionalidade Menu
+
 const btnMenu = document.getElementById('btn-menu');
 
 function toggleMenu(event) {

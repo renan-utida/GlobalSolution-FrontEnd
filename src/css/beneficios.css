@@ -42,11 +42,11 @@ body{
         'imagem     imagem      imagem      ambiental   ambiental   ambiental'
         'imagem     imagem      imagem      ambiental   ambiental   ambiental'
         'imagem     imagem      imagem      ambiental   ambiental   ambiental'
-        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
-        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
-        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
-        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
-        'imagem     imagem      imagem      tecnologico tecnologico tecnologico'
+        'imagem     imagem      imagem      tech        tech        tech'
+        'imagem     imagem      imagem      tech        tech        tech'
+        'imagem     imagem      imagem      tech        tech        tech'
+        'imagem     imagem      imagem      tech        tech        tech'
+        'imagem     imagem      imagem      tech        tech        tech'
         'imagem     imagem      imagem      economico   economico   economico'
         'imagem     imagem      imagem      economico   economico   economico'
         'imagem     imagem      imagem      economico   economico   economico'
@@ -120,7 +120,7 @@ body{
     font-size: 22px;
     border: none;
     background: none;
-    color: var(--color1);
+    color: white;
     cursor: pointer;
     gap: .5rem;
 }
@@ -297,7 +297,6 @@ img {
 .ben-ambiental img{
     max-width: 45px;
     height: 45px;
-    gap: 10px;
     margin: 2px 20px 0px 0px;
 }
 
@@ -310,7 +309,7 @@ img {
 }
 
 .tecnologico{
-    grid-area: tecnologico;
+    grid-area: tech;
     background-color: var(--color5);
     border-radius: 10px;
     margin: 10px 25px 10px 10px;
@@ -373,6 +372,7 @@ img {
     text-indent: 20px;
     text-align: justify;
     font-size: 17px;
+    font-family: "PT Serif", serif; 
 }
 
 .rodape{
@@ -389,6 +389,188 @@ img {
     font-style: italic;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 980px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 30px;
+        grid-template-areas:
+            'header     header      header      header      header      header'
+            'header     header      header      header      header      header'
+            'beneficio  beneficio   beneficio   beneficio   beneficio   beneficio'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'tech       tech        tech        tech        tech        tech'
+            'tech       tech        tech        tech        tech        tech'
+            'tech       tech        tech        tech        tech        tech'
+            'tech       tech        tech        tech        tech        tech'
+            'tech       tech        tech        tech        tech        tech'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+        ;
+    }
 
+    .slideshow-container{
+        max-width: 720px;
+        height: 490px;
+        margin: 15px auto;
+    }
+
+    .ambiental{
+        margin: 15px 25px 10px 25px;
+    }
+    
+    .ben-ambiental img{
+        max-width: 44px;
+        height: 44px;
+    }
+    
+    .ambiental .ben-amb{
+        margin: 0px 20px 5px 40px;
+        font-size: 15px; 
+    }
+    
+    .tecnologico{
+        margin: 10px 25px;
+    }
+    
+    .ben-tecnologico img{
+        max-width: 45px;
+        height: 45px;
+        margin: 0px 20px 0px 5px;
+    }
+    
+    .tecnologico .ben-tec{
+        margin: 5px 20px 5px 40px;
+        font-size: 15px;
+    }
+    
+    .economicos{
+        margin: 10px 25px 20px 25px;
+    }
+    
+    .ben-economico h3{
+        font-size: 21px;
+    } 
+    
+    .ben-economico img{
+        max-width: 45px;
+        height: 45px;
+    }
+    
+    .economicos .ben-eco{
+        margin: 0px 20px 0px 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 30px;
+        grid-template-areas:
+            'header     header      header      header      header      header'
+            'header     header      header      header      header      header'
+            'beneficio  beneficio   beneficio   beneficio   beneficio   beneficio'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'titulo     titulo      titulo      titulo      titulo      titulo'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'imagem     imagem      imagem      imagem      imagem      imagem'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'ambiental  ambiental   ambiental   ambiental   ambiental   ambiental'
+            'tech       tech        tech        tech        tech        tech'
+            'tech       tech        tech        tech        tech        tech'
+            'tech       tech        tech        tech        tech        tech'
+            'tech       tech        tech        tech        tech        tech'
+            'tech       tech        tech        tech        tech        tech'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'economico  economico   economico   economico   economico   economico'
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+            'rodape     rodape      rodape      rodape      rodape      rodape' 
+        ;
+    }
+
+    .titulo h1{
+        font-size: 30px;
+        color: var(--color1);
+        margin-right: 10px;
+    }
+    
+    .titulo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .beneficios{
+        font-size: 9px;
+    }
+
+    .tema-principal h1{
+        font-size: 35px;
+    }
+    
+    .tema-principal h2{
+        font-size: 21px;
+        font-style: italic;
+        color: var(--color11);
+    }
+
+    .slideshow-container{
+        max-width: 480px;
+    }
 }
